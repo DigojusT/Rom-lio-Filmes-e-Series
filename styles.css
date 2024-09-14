@@ -31,6 +31,11 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*
 .seila h1 {
     position: absolute;
