@@ -31,6 +31,7 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
+    padding: 2em; /* Adicionado para mais espaço interno em telas menores */
 }
 
 .container {
