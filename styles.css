@@ -10,6 +10,236 @@ body {
     background-color: black;
     color: var(--text_color);
     font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Melhor ajuste para telas menores */
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Ajuste automático das colunas */
+    gap: 1em;
+    padding: 1em;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Coluna única para tablets e celulares */
+        padding: 0.5em;
+    }
+
+    .container_box {
+        margin: 0 2em; /* Ajusta margens para telas menores */
+    }
+
+    .h2 {
+        font-size: 200%; /* Reduz tamanho de fontes em telas menores */
+    }
+
+    .price_button {
+        font-size: 18px;
+        padding: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr; /* Força uma única coluna em telas muito pequenas */
+    }
+
+    .container_box {
+        margin: 0 1em;
+    }
+
+    .h2 {
+        font-size: 180%; /* Ajuste para celulares */
+    }
+
+    .titlee {
+        font-size: 300%;
+    }
+
+    .price_button {
+        font-size: 16px;
+        padding: 0.6em;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container__button {
+    background-color: var(--button_color);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--text_color);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    font-size: 25px;
+}
+
+.secondary_button {
+    background-color: transparent;
+    border: 2px solid var(--text_color);
+}
+
+.container_img {
+    margin: 3em 0 4em 0;
+}
+
+.container_box {
+    margin: 0 6em;
+}
+
+.container_secondary {
+    margin-top: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafo {
+    font-size: 150%;
+    margin: 7em 0 0 0;
+    color: var(--gray_text_color);
+}
+
+.tertiary {
+    align-items: center;
+    margin: 0 7em;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.paragrafo2 {
+    color: rgb(180, 180, 180);
+    font-size: 130%;
+    margin-top: 1em;
+}
+
+.planos {
+    display: inline-block;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10em 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container_planos {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.price_decoration {
+    background-color: var(--secondary_color);
+    padding: 2em;
+    border-radius: 40px;
+}
+
+.cinza {
+    color: var(--gray_text_color);
+    margin-top: 3%;
+    font-size: 130%;
+}
+
+.text {
+    margin-top: 10%;
+    font-size: 150%;
+}
+
+.tet {
+    border-top: 2px solid var(--text_color);
+    margin-top: 10%;
+    padding-top: 2%;
+}
+
+.price_button {
+    background-color: var(--button_color);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--text_color);
+    display: block;
+    text-decoration: none;
+    margin-top: 3em;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.footer_logo {
+    width: 140px;
+    margin: 0 0 2em;
+}
+
+.footer_list {
+    display: flex;
+    margin: 0 0 1em;
+}
+
+.list_link a {
+    text-decoration: none;
+    color: var(--text_color);
+    margin: 2em 2em 1em 2em;
+    font-size: 25px;
+}
+
+.footer_text {
+    color: var(--gray_text_color);
+    text-align: center;
+    margin: 0 0 1em;
+    font-size: 20px;
+}
+
+
+/*
+:root {
+    --main_color: rgb(0, 0, 0);
+    --secondary_color: rgb(39, 39, 39);
+    --text_color: rgb(255, 255, 255);
+    --button_color: rgb(48, 48, 48);
+    --gray_text_color: rgb(180, 180, 180);
+}
+
+body {
+    background-color: black;
+    color: var(--text_color);
+    font-family: "Rubik", sans-serif;
 }
 
 * {
@@ -219,3 +449,5 @@ li {
     margin: 0 0 1em;
     font-size: 20px;
 }
+
+*/
