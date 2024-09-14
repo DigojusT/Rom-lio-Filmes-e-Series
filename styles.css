@@ -266,13 +266,13 @@ img {
     height: auto;
 }
 
-/*
+
 .seila h1 {
     position: absolute;
     top: 0;
     width: 41%;
 }
-*/
+
 
 .container__button {
     background-color: var(--button_color);
@@ -450,4 +450,4 @@ li {
     font-size: 20px;
 }
 
-*/
+/*
