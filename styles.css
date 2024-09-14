@@ -24,85 +24,22 @@ body {
 .main {
     background-image: url("img/background.png");
     background-repeat: no-repeat;
-    background-size: cover; /* Melhor ajuste para telas menores */
+    background-size: cover;
     background-position: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
     text-align: center;
-    height: 100vh; /* Preenche a tela toda */
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colunas para telas grandes */
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
-    height: 100vh;
-    padding: 2em;
-}
-
-/* Ajuste de responsividade */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr; /* Coluna única para tablets */
-        padding: 1em;
-    }
-
-    .container_box {
-        margin: 0 2em;
-    }
-
-    .h2 {
-        font-size: 2em; /* Reduz o tamanho do título */
-    }
-
-    .titlee {
-        font-size: 3em; /* Ajusta o tamanho dos títulos maiores */
-    }
-
-    .price_button {
-        font-size: 18px;
-        padding: 0.8em;
-    }
-
-    .paragrafo, .paragrafo2 {
-        font-size: 1.2em;
-    }
-
-    .container_secondary {
-        margin-top: 5em; /* Diminui o espaço em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        grid-template-columns: 1fr; /* Coluna única para celulares */
-        padding: 1em;
-    }
-
-    .container_box {
-        margin: 0 1em; /* Margem ajustada para celulares */
-    }
-
-    .h2 {
-        font-size: 1.5em; /* Ajuste de fonte para celulares */
-    }
-
-    .titlee {
-        font-size: 2.5em;
-    }
-
-    .price_button {
-        font-size: 16px;
-        padding: 0.6em;
-    }
-
-    .paragrafo, .paragrafo2 {
-        font-size: 1em;
-    }
-    
-    .tabela {
-        flex-direction: column; /* Ajusta a tabela para empilhar itens em celular */
-        margin: 3em 0;
-    }
+    padding: 1em;
+    height: 100%;
+    align-items: center;
 }
 
 img {
@@ -121,6 +58,10 @@ img {
     font-size: 25px;
 }
 
+.container__button:visited {
+    color: var(--text_color);
+}
+
 .secondary_button {
     background-color: transparent;
     border: 2px solid var(--text_color);
@@ -132,6 +73,7 @@ img {
 
 .container_box {
     margin: 0 6em;
+    text-align: center;
 }
 
 .container_secondary {
@@ -142,19 +84,20 @@ img {
 }
 
 .paragrafo {
-    font-size: 1.5em;
+    font-size: 150%;
     margin: 7em 0 0 0;
     color: var(--gray_text_color);
-}
-
-.tertiary {
-    align-items: center;
-    margin: 0 7em;
 }
 
 .h2 {
     font-weight: 700;
     font-size: 3em;
+}
+
+.paragrafo2 {
+    color: var(--gray_text_color);
+    font-size: 130%;
+    margin-top: 1em;
 }
 
 .planos {
@@ -175,30 +118,13 @@ li {
 .container_planos {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .price_decoration {
     background-color: var(--secondary_color);
     padding: 2em;
     border-radius: 40px;
-}
-
-.cinza {
-    color: var(--gray_text_color);
-    margin-top: 3%;
-    font-size: 1.3em;
-}
-
-.text {
-    margin-top: 10%;
-    font-size: 1.5em;
-}
-
-.tet {
-    border-top: 2px solid var(--text_color);
-    margin-top: 10%;
-    padding-top: 2%;
 }
 
 .price_button {
@@ -242,4 +168,85 @@ li {
     text-align: center;
     margin: 0 0 1em;
     font-size: 20px;
+}
+
+/* Ajustes de responsividade para tablets */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Coluna única para tablets */
+        padding: 1em;
+    }
+
+    .container_box {
+        margin: 0 2em; /* Reduz margens para tablets */
+    }
+
+    .h2 {
+        font-size: 2em; /* Reduz o tamanho dos títulos em tablets */
+    }
+
+    .titlee {
+        font-size: 3em; /* Reduz o tamanho dos títulos maiores */
+    }
+
+    .price_button {
+        font-size: 18px;
+        padding: 0.8em;
+    }
+
+    .paragrafo, .paragrafo2 {
+        font-size: 1.2em;
+    }
+
+    .tabela {
+        flex-direction: column; /* Empilha a tabela em tablets */
+        margin: 3em 0;
+    }
+}
+
+/* Ajustes de responsividade para celulares */
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr; /* Coluna única para celulares */
+        padding: 1em;
+    }
+
+    .container_box {
+        margin: 0 1em; /* Margem mínima em celulares */
+    }
+
+    .h2 {
+        font-size: 1.5em; /* Reduz o tamanho do título em celulares */
+    }
+
+    .titlee {
+        font-size: 2.5em; /* Ajusta o tamanho dos títulos principais */
+    }
+
+    .price_button {
+        font-size: 16px;
+        padding: 0.6em;
+    }
+
+    .paragrafo, .paragrafo2 {
+        font-size: 1em; /* Fonte menor para celulares */
+    }
+
+    .tabela {
+        flex-direction: column; /* Tabela empilhada em celulares */
+        margin: 2em 0;
+    }
+
+    .main {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container_secondary {
+        margin-top: 5em; /* Ajuste de margem em telas menores */
+    }
+
+    .price_decoration {
+        padding: 1.5em; /* Reduz o padding das caixas de preço em telas pequenas */
+    }
 }
