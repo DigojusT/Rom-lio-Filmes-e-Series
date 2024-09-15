@@ -233,7 +233,7 @@ li {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
