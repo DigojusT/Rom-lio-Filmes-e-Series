@@ -239,6 +239,7 @@ li {
         grid-template-columns: 1fr;
         align-items: center;
         gap: 1em;
+        margin: 0 1em 0 1em;
     }
 
     .main {
