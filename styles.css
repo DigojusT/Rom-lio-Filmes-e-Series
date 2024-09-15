@@ -214,16 +214,17 @@ li {
     .main {
         background-image: none;
     }
-    
+
     .container {
         display: flex;
-        
+
 
     }
 
     .footer_list {
         display: none;
     }
+
     .secondary_image {
         transform: scale(0.5);
     }
@@ -239,7 +240,7 @@ li {
         grid-template-columns: 1fr;
         align-items: center;
         gap: 1em;
-        
+
     }
 
     .main {
@@ -262,7 +263,7 @@ li {
 
 
     .tex {
-        font-size: 20px; 
+        font-size: 20px;
         margin: 0.5em;
     }
 
@@ -347,4 +348,3 @@ li {
         font-size: 20px;
     }
 }
-
