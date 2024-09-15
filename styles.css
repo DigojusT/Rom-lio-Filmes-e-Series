@@ -31,13 +31,7 @@ body {
     grid-template-columns: 50% 50%;
 }
 
-/*
-.seila h1 {
-    position: absolute;
-    top: 0;
-    width: 41%;
-}
-*/
+
 
 .container__button {
     background-color: var(--button_color);
@@ -178,7 +172,7 @@ li {
     text-decoration: none;
     margin-top: 3em;
     font-size: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .footer {
@@ -213,5 +207,82 @@ li {
     text-align: center;
     margin: 0 0 1em;
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 1210px) {
+    .main {
+        background-image: none;
+    }
+    
+    .container {
+        display: flex;
+        
+
+    }
+
+    .footer_list {
+        display: none;
+    }
+    .secondary_image {
+        transform: scale(0.5);
+    }
+
+    .titlee {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container {
+        grid-template-columns: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        
+    }
+
+    .container_img {
+        transform: scale(.5);
+        margin: 0;
+    }
+
+    .seila {
+        display: inline;
+
+    }
+    .tex {
+        font-size: 20px; 
+        margin: 0 1em 0 1em;
+    }
+
+    .container__button {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0 10px;
+    }
+
+    .secondary_image {
+        transform: scale(1);
+        margin: 0;
+    }
+
+    .container_secondary {
+        margin: 1em 0;
+        align-items: stretch;
+    }
+
+    .paragrafo {
+        font-size: 12px;
+        margin: 0 1em 0 1em;
+        text-align: center;
+    }
+
+    .textinho {
+        margin: 0;
+    }
 }
 
