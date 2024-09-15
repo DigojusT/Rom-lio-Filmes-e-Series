@@ -257,9 +257,7 @@ li {
 
     }
 
-    .textodecima {
-        font-size: 20px;
-    }
+
 
     .tex {
         font-size: 20px; 
@@ -340,6 +338,10 @@ li {
 
     .footer_text {
         font-size: 14px;
+    }
+
+    .textodecima {
+        font-size: 20px;
     }
 }
 
