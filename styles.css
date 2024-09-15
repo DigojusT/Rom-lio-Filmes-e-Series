@@ -254,9 +254,13 @@ li {
 
     .seila {
         display: inline;
-        font-size: 27px;
 
     }
+
+    .seila h1 {
+        font-size: 25px;
+    }
+
     .tex {
         font-size: 20px; 
         margin: 0.5em;
